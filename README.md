@@ -4,8 +4,8 @@
 
 ---
 # NOTICE:
-* This menu is forked from the original MalumMenu. All credit goes to scp222thj. Click [here](https://github.com/scp222thj/MalumMenu) to access the menu
-* Or, you can visit https://github.com/scp222thj/MalumMenu
+* This menu is forked from the original MalumMenu. All credit goes to scp222thj.
+  * To access the original, click [here](https://github.com/scp222thj/MalumMenu) or go to https://github.com/scp222thj/MalumMenu
 ---
 
 <p align="center">
