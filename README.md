@@ -163,7 +163,7 @@ When installing MalumMenu for the first time, it will take **MUCH** longer than 
 
 <summary><h2>👾 I found a bug OR I would like to suggest a new feature</h2></summary>
 
-To let me know, you can open a new Github issue [here](https://github.com/scp222thj/MalumMenu/issues/new), or you can discuss it on our Discord server: [discord.gg/YYcYf88jAb](https://discord.gg/YYcYf88jAb)
+To let me know, you can open a new Github issue [on the original MalumMenu](https://github.com/scp222thj/MalumMenu/issues/new), or [on my fork](https://github.com/ADHyperActive/MalumMenu/issues/new) (I recommend the original since I'm unlikely to implement changes on my fork due to being busy high school student), or you can discuss it on our Discord server: [discord.gg/YYcYf88jAb](https://discord.gg/YYcYf88jAb)
 
 If you want, you can also contribute to the project and implement the change yourself by making a pull request. All contributions are welcome!
 
