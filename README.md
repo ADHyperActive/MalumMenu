@@ -55,18 +55,18 @@
 
 ## 🪟 Windows
 
-1. Download the latest **MalumMenu zip pack** from [here](https://github.com/scp222thj/MalumMenu/releases/latest).
+1. Download the latest **MalumMenu zip pack** from [here](https://github.com/ADHyperActive/MalumMenu/releases/latest).
     - **For Steam or Itch.io:** Download `MalumMenu-VERSION-Steam-Itch.zip`.
-    - **For Microsoft Store, Epic Games Store, or Xbox App:** Download `MalumMenu-VERSION-MicrosoftStore-EpicGames-XboxApp.zip`.
+    - **For Microsoft Store, Epic Games Store, or Xbox App:** Not supported by HyperMenu. For these platforms, go to the original MalumMenu [here](https://github.com/scp222thj/MalumMenu/releases/latest).
 
 2. Open the zip file you have just downloaded and copy all its contents.
 
 3. Paste these files directly into your Among Us game folder:
     - **Steam:** Right-click Among Us in your Library → Click `Manage` → Click `Browse local files`.
-    - **Epic Launcher:** Right-click Among Us in your Library → Click `Manage` → Click the folder icon in the `Installation` box.
     - **Itch.io:** Open the Itch.io app → Right-click Among Us in your Library → Click `Manage` → Click `Open folder in Explorer`.
-   - **Microsoft Store:** Open the folder where Windows apps are installed (typically `C:\Program Files\WindowsApps\`) by following the tutorial [here](https://youtu.be/qCeoEIy_vrw) → In File Explorer, use the search bar to search for `Among Us.exe` → Right-click the `Among Us.exe` result → Select `Open file location`.
-    - **Xbox App:** Right-click Among Us in your Library → Click `Manage` → Open the `FILES` tab → Click `BROWSE...` → Open the `Among Us` folder → Open the `Content` folder.
+    - **Epic Launcher:** Not currently supported by HyperMenu.
+    - **Microsoft Store:** Not currently supported by HyperMenu.
+    - **Xbox App:** Not currently supported by HyperMenu.
 
 4. Launch Among Us as you normally would. You should see a console window appear, installing the mod's requirements.
 
@@ -108,6 +108,13 @@
 
 <img alt="image" src="https://scp222thj.dev/static/images/malumIngame.png">
 
+*Note: This image is from the original menu, as I haven't had time to make my own yet.*
+
+## Changes from OG Malum Menu
+* Modernized GUI
+* Ability to change options from the config file within the menu
+
+## OG Menu Features
 - An intuitive GUI with our latest, greatest Among Us cheats
 - See ghosts & reveal the impostors
 - Track every player's position using the minimap
@@ -119,6 +126,7 @@
 - No more annoying disconnect penalties
 
 For a complete list of all of MalumMenu's features, click [here](https://github.com/scp222thj/MalumMenu/blob/main/FEATURES.md)
+For a complete list of all of HyperMenu's features, click [here](https://github.com/ADHyperActive/MalumMenu/blob/main/FEATURES.md)
 
 # ❓ FAQ
 
@@ -126,24 +134,24 @@ Click to expand each topic
 
 <details>
 
-<summary><h2>❗ I'm having issues installing MalumMenu</h2></summary>
+<summary><h2>❗ I'm having issues installing HyperMenu</h2></summary>
 
-First of all, make sure you are running the most recent version of Among Us (`17.2.1` / `2026.2.24`) with the most recent version of MalumMenu (`v3.0.0`).
+First of all, make sure you are running the most recent version of Among Us (`17.2.1` / `2026.2.24`) with the most recent version of HyperMenu (`v2.0.0`).
 
 Also, check if your platform is officially supported:
 
 - ✅ Steam
 - ✅ Itch.io
-- ✅ Epic Games Launcher
-- ✅ Microsoft Store
-- ✅ Xbox App
-- ❔ Cracked (rarely works)
+- ❌ Epic Games Launcher
+- ❌ Microsoft Store
+- ❌ Xbox App
+- ❌ Cracked
 - ❌ iOS App Store & Google Play
 - ❌ PS & Switch & Xbox Console
 
 Now ensure that you have downloaded the correct zip file for your platform:
-- **For Steam or Itch.io:** Download `MalumMenu-VERSION-Steam-Itch.zip`
-- **For Microsoft Store, Epic Games Store, or Xbox App:** Download `MalumMenu-VERSION-MicrosoftStore-EpicGames-XboxApp.zip`
+- **For Steam or Itch.io:** Download `HyperMenu-VERSION-Steam-Itch.zip`
+- **For Microsoft Store, Epic Games Store, or Xbox App:** This is not officially supported by HyperMenu. For these features, download the original MalumMenu.
 
 Make sure you followed the installation guide precisely. This is what your `Among Us` folder should look like after a successful installation:
 
@@ -155,7 +163,7 @@ When installing MalumMenu for the first time, it will take **MUCH** longer than 
 
 <img src="https://scp222thj.dev/static/images/bepinexConsole.png" alt="drawing" width="550"/>
 
-<br>If you are still having issues, feel free to open a new Github issue [here](https://github.com/scp222thj/MalumMenu/issues/new), or you can ask for help in our Discord server: [discord.gg/YYcYf88jAb](https://discord.gg/YYcYf88jAb)
+<br>If you are still having issues, feel free to open a new Github issue [on the original menu](https://github.com/scp222thj/MalumMenu/issues/new), or you can ask for help in the MalumMenu Discord server: [discord.gg/YYcYf88jAb](https://discord.gg/YYcYf88jAb)
 
 </details>
 
@@ -163,31 +171,7 @@ When installing MalumMenu for the first time, it will take **MUCH** longer than 
 
 <summary><h2>👾 I found a bug OR I would like to suggest a new feature</h2></summary>
 
-To let me know, you can open a new Github issue [on the original MalumMenu](https://github.com/scp222thj/MalumMenu/issues/new), or [on my fork](https://github.com/ADHyperActive/MalumMenu/issues/new) (I recommend the original since I'm unlikely to implement changes on my fork due to being busy high school student), or you can discuss it on our Discord server: [discord.gg/YYcYf88jAb](https://discord.gg/YYcYf88jAb)
-
-If you want, you can also contribute to the project and implement the change yourself by making a pull request. All contributions are welcome!
-
-</details>
-
-<details>
-
-<summary><h2>👨‍💻 I want to contribute to this project</h2></summary>
-
-To get started, I suggest you first learn about the basics of C# and Unity, since that's what Among Us is written in. There are plenty of tutorials out there to help you with that.
-
-You should also learn about Github forking and pull requests, since you will need to use those to make any contributions to the project. [Here](https://docs.github.com/en/get-started/exploring-projects-on-github/contributing-to-a-project) is the official documentation on the topic.
-
-Then, I suggest you learn about Among Us modding in general. In this project, I use BepInEx and Harmony to patch the game, so I suggest you take a look at [this](https://docs.reactor.gg) great guide to learn how to work with those.
-
-Here are some other useful resources:
-
-- The [Reactor](https://reactor.gg/discord) discord server
-    - A great community of Among Us modders where you can ask questions and get help
-    - Here you can also find the most recent decompiled Among Us assemblies (the DLL files in `#resources` channel). I suggest using [dnSpy](https://github.com/dnSpy/dnSpy/releases/latest) to go through these.
-
-- [sus.wiki](https://github.com/roobscoob/among-us-protocol)
-    - Useful resource to learn more about the Among Us network protocol
-    - Keep in mind that it is slightly outdated
+To report a bug or request a feature, you can open a new Github issue [on the original MalumMenu](https://github.com/scp222thj/MalumMenu/issues/new), or [on my fork](https://github.com/ADHyperActive/MalumMenu/issues/new) (I recommend the original since I'm unlikely to implement changes on my fork due to being busy high school student), or you can discuss it on the MalumMenu Discord server: [discord.gg/YYcYf88jAb](https://discord.gg/YYcYf88jAb)
 
 </details>
 
