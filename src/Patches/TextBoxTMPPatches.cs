@@ -73,7 +73,7 @@ public static class TextBoxTMP_IsCharAllowed
 
         char currentChar = text[_currentCharPos];
 
-        if (_currentCharPos == text.Length - 1)
+        if (_currentCharPos >= text.Length - 1)
         {
             _currentCharPos = 0; // Reset position when loop finishes
         }
