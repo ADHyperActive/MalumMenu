@@ -116,9 +116,7 @@ https://discord.gg/GZKcdkFD5
 
 # 📋 Features
 
-<img alt="image" src="https://scp222thj.dev/static/images/malumIngame.png">
-
-*Note: This image is from the original menu, as I haven't had time to make my own yet.*
+<img alt="image" src="HyperInGame.jpeg">
 
 ## Changes from OG Malum Menu
 * Modernized GUI
