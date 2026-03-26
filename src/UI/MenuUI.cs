@@ -21,10 +21,10 @@ public class MenuUI : MonoBehaviour
     // Create all groups (buttons) and their toggles on start
     private void Start()
     {
-        groups.Add(new GroupInfo("Player", false,
+        groups.Add(new GroupInfo("Movement", false,
             new List<ToggleInfo>() {
                 new ToggleInfo(" NoClip", () => CheatToggles.noClip, x => CheatToggles.noClip = x),
-                new ToggleInfo(" Fake Revive", () => CheatToggles.fakeRevive, x => CheatToggles.fakeRevive = x),
+                //new ToggleInfo(" Fake Revive", () => CheatToggles.fakeRevive, x => CheatToggles.fakeRevive = x),
                 new ToggleInfo(" Invert Controls", () => CheatToggles.invertControls, x => CheatToggles.invertControls = x)
             },
             new List<SubmenuInfo> {
@@ -411,7 +411,7 @@ public class MenuUI : MonoBehaviour
     {
         return groups[groupId].name switch
         {
-            "Player" => 1,
+            "Movement" => 1,
             "ESP" => 1,
             "Roles" => 4,
             "Ship" => 1,
@@ -443,7 +443,7 @@ public class MenuUI : MonoBehaviour
             needSpace = true;
         }
 
-        if (group.name == "Player")
+        if (group.name == "Movement")
         {
             try
             {
