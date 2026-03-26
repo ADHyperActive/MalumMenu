@@ -177,6 +177,24 @@ public class MenuUI : MonoBehaviour
             }
         ));
 
+        groups.Add(new GroupInfo("Animations", false,
+            new List<ToggleInfo>() {
+                new ToggleInfo(" Shields", () => CheatToggles.animShields, x => CheatToggles.animShields = x),
+                new ToggleInfo(" Asteroids", () => CheatToggles.animAsteroids, x => CheatToggles.animAsteroids = x),
+                new ToggleInfo(" Empty Garbage", () => CheatToggles.animEmptyGarbage, x => CheatToggles.animEmptyGarbage = x),
+                new ToggleInfo(" Medbay Scan", () => CheatToggles.animScan, x => CheatToggles.animScan = x),
+                new ToggleInfo(" Cams In Use", () => CheatToggles.animCamsInUse, x => CheatToggles.animCamsInUse = x),
+                //new ToggleInfo(" Pet", () => CheatToggles.animPet, x => CheatToggles.animPet = x)
+            },
+            new List<SubmenuInfo>() {
+                new SubmenuInfo("Client-Sided", false,
+                    new List<ToggleInfo>() {
+                        new ToggleInfo(" Moonwalk", () => CheatToggles.moonWalk, x => CheatToggles.moonWalk = x)
+                    }
+                )
+            }
+        ));
+
         groups.Add(new GroupInfo("Console", false,
             new List<ToggleInfo>() {
                 new ToggleInfo(" Show Console", () => CheatToggles.showConsole, x => CheatToggles.showConsole = x),
@@ -233,24 +251,6 @@ public class MenuUI : MonoBehaviour
                 new ToggleInfo(" Panic (Disable MalumMenu)", () => CheatToggles.panic, x => CheatToggles.panic = x)
             },
             new List<SubmenuInfo>()
-        ));
-
-        groups.Add(new GroupInfo("Animations", false,
-            new List<ToggleInfo>() {
-                new ToggleInfo(" Shields", () => CheatToggles.animShields, x => CheatToggles.animShields = x),
-                new ToggleInfo(" Asteroids", () => CheatToggles.animAsteroids, x => CheatToggles.animAsteroids = x),
-                new ToggleInfo(" Empty Garbage", () => CheatToggles.animEmptyGarbage, x => CheatToggles.animEmptyGarbage = x),
-                new ToggleInfo(" Medbay Scan", () => CheatToggles.animScan, x => CheatToggles.animScan = x),
-                new ToggleInfo(" Cams In Use", () => CheatToggles.animCamsInUse, x => CheatToggles.animCamsInUse = x),
-                //new ToggleInfo(" Pet", () => CheatToggles.animPet, x => CheatToggles.animPet = x)
-            },
-            new List<SubmenuInfo>() {
-                new SubmenuInfo("Client-Sided", false,
-                    new List<ToggleInfo>() {
-                        new ToggleInfo(" Moonwalk", () => CheatToggles.moonWalk, x => CheatToggles.moonWalk = x)
-                    }
-                )
-            }
         ));
 
         groups.Add(new GroupInfo("Config", false,
