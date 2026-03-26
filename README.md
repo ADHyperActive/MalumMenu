@@ -51,6 +51,7 @@ https://discord.gg/GZKcdkFD5
 
 | Mod Version| Among Us - Version | Link |
 |----------|-------------|-----------------|
+| v3.0.3 |  2026.3.17  | [Download](https://github.com/ADHyperActive/MalumMenu/releases/tag/ADV3.0.3) |
 | v3.0.2 |  2026.3.17  | [Download](https://github.com/ADHyperActive/MalumMenu/releases/tag/ADV3.0.2) |
 | v3.0.1 |  2026.3.17  | [Download](https://github.com/ADHyperActive/MalumMenu/releases/tag/ADV3.0.1) |
 | v2.1.1 |  2026.3.17  | [Download](https://github.com/ADHyperActive/MalumMenu/releases/tag/ADV2.1.1) |
