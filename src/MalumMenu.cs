@@ -106,14 +106,15 @@ public partial class MalumMenu : BasePlugin
 
         Harmony.PatchAll();
 
+        // UI
         menuUI = AddComponent<MenuUI>();
-
         consoleUI = AddComponent<ConsoleUI>();
         rolesUI = AddComponent<RolesUI>();
         doorsUI = AddComponent<DoorsUI>();
         tasksUI = AddComponent<TasksUI>();
         protectUI = AddComponent<ProtectUI>();
 
+        // Components
         keybindListener = AddComponent<KeybindListener>();
 
         // Disables Telemetry (haven't fully tested if it works, but according to Unity docs it should)
