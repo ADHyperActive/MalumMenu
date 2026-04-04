@@ -439,6 +439,15 @@ public static class MalumCheats
 
     public static void StopAllAnimationsCheats()
     {
+        CheatToggles.animShields = false;
+        CheatToggles.animAsteroids = false;
+        CheatToggles.animEmptyGarbage = false;
+        CheatToggles.animMedScan = false;
+        CheatToggles.animCamsInUse = false;
+
+        // This ensures cams and scan animations don't remain marked as active if the player
+        // disconnects while the toggles are on (as this may cause unusual RPCs in lobbies)
+
         _isCamsAnimActive = false;
         _isScanAnimActive = false;
     }
