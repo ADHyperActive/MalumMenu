@@ -152,6 +152,15 @@ public static class Utils
         return RoleManager.Instance.AllRoles.ToArray().First(r => r.Role == roleType);
     }
 
+    // Gets RoleBehaviour from a TeamType
+    public static RoleBehaviour GetBehaviourByTeamType(RoleTeamTypes roleTeamType)
+    {
+        RoleTypes roleType = (RoleTypes)Enum.Parse(typeof(RoleTypes), roleTeamType.ToString(), true);
+        RoleBehaviour role = GetBehaviourByRoleType(roleType);
+
+        return role;
+    }
+
     public static void ForceSetScanner(PlayerControl player, bool toggle)
     {
         var count = ++player.scannerCount;
@@ -321,10 +330,11 @@ public static class Utils
         return outputList.Count <= 0 ? null : outputList;
     }
 
-    // Gets current map ID
+    // Returns current map ID if available
     public static byte GetCurrentMapID()
     {
-        try
+        // Works for the tutorial
+        if (isFreePlay)
         {
             // If playing the tutorial
             if (isFreePlay)
@@ -332,13 +342,14 @@ public static class Utils
                 return (byte)AmongUsClient.Instance.TutorialMapId;
             }
 
-            // Works for local/online games
+        // Works for local / online games
+        if (GameOptionsManager.Instance?.currentGameOptions != null)
+        {
             return GameOptionsManager.Instance.currentGameOptions.MapId;
         }
-        catch
-        {
-            return 255;
-        }
+
+        // Defaults to byte.MaxValue if the current map ID is unavailable
+        return byte.MaxValue;
     }
 
     // Gets SystemType of the room the player is currently in
@@ -430,19 +441,11 @@ public static class Utils
         var translatedRole = DestroyableSingleton<TranslationController>.Instance.GetString(playerData.Role.StringName, Il2CppSystem.Array.Empty<Il2CppSystem.Object>());
         if (translatedRole != "STRMISS") return translatedRole;
 
-        if (playerData.RoleWhenAlive.HasValue)
-        {
-            translatedRole = DestroyableSingleton<TranslationController>.Instance.GetString(GetBehaviourByRoleType(playerData.RoleWhenAlive.Value).StringName, Il2CppSystem.Array.Empty<Il2CppSystem.Object>());
-        }
-        else
-        {
-            translatedRole = "Ghost";
-        }
-
+        translatedRole = DestroyableSingleton<TranslationController>.Instance.GetString(GetBehaviourByTeamType(playerData.Role.TeamType).StringName, Il2CppSystem.Array.Empty<Il2CppSystem.Object>());
         return translatedRole;
     }
 
-    // Gets the appropriate nametag for a player (seeRoles cheat)
+    // Gets the appropriate nametag for a player
     public static string GetNameTag(NetworkedPlayerInfo playerInfo, string playerName, bool isChat = false)
     {
         var nameTag = playerName;

@@ -381,7 +381,7 @@ public static class MalumCheats
 
         byte mapId = Utils.GetCurrentMapID();
 
-        if (mapId == 255) return;
+        if (mapId == byte.MaxValue) return;
 
         var map = (MapNames)mapId;
 
@@ -416,7 +416,7 @@ public static class MalumCheats
             CheatToggles.animEmptyGarbage = false;
         }
 
-        if (!(map is MapNames.MiraHQ or MapNames.Fungle))
+        if (map is not (MapNames.MiraHQ or MapNames.Fungle))
         {
             if (CheatToggles.animCamsInUse && !_isCamsAnimActive)
             {
@@ -437,8 +437,17 @@ public static class MalumCheats
         }
     }
 
-    public static void StopAllAnimationsCheats()
+    public static void StopShipAnimCheats()
     {
+        CheatToggles.animShields = false;
+        CheatToggles.animAsteroids = false;
+        CheatToggles.animEmptyGarbage = false;
+        CheatToggles.animMedScan = false;
+        CheatToggles.animCamsInUse = false;
+
+        // This ensures cams and scan animations don't remain marked as active if the player
+        // disconnects while the toggles are on (as this may cause unusual RPCs in lobbies)
+
         _isCamsAnimActive = false;
         _isScanAnimActive = false;
     }

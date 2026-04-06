@@ -16,6 +16,7 @@ namespace MalumMenu;
 public partial class MalumMenu : BasePlugin
 {
     public Harmony Harmony { get; } = new(Id);
+    public static MalumMenu Plugin;
     public new static ManualLogSource Log;
     public static MalumMenu Instance { get; private set; }
 
@@ -49,6 +50,7 @@ public partial class MalumMenu : BasePlugin
     {
         Instance = this;
         Log = base.Log;
+        Plugin = this;
 
         // Loads config settings
         menuKeybind = Config.Bind("MalumMenu.GUI",
@@ -108,16 +110,16 @@ public partial class MalumMenu : BasePlugin
 
         Harmony.PatchAll();
 
+        // UI
         menuUI = AddComponent<MenuUI>();
-
         consoleUI = AddComponent<ConsoleUI>();
         rolesUI = AddComponent<RolesUI>();
         doorsUI = AddComponent<DoorsUI>();
         tasksUI = AddComponent<TasksUI>();
         protectUI = AddComponent<ProtectUI>();
 
+        // Components
         keybindListener = AddComponent<KeybindListener>();
-        keybindListener.Plugin = this;
 
         // Disables Telemetry (haven't fully tested if it works, but according to Unity docs it should)
         if (noTelemetry.Value)

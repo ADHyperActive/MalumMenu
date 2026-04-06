@@ -86,6 +86,23 @@ public class MenuUI : MonoBehaviour
             DisableSabotageCheats();
         }
         _wasInGameplay = currentlyInGameplay;
+        if (CheatToggles.reloadConfig)
+        {
+            MalumMenu.Plugin.Config.Reload();
+            CheatToggles.reloadConfig = false;
+        }
+
+        if (CheatToggles.saveProfile)
+        {
+            CheatToggles.saveProfile = false; // Disable first to avoid saving it to profile
+            CheatToggles.SaveTogglesToProfile();
+        }
+
+        if (CheatToggles.loadProfile)
+        {
+            CheatToggles.LoadTogglesFromProfile();
+            CheatToggles.loadProfile = false;
+        }
 
         // Some cheats only work if the LocalPlayer exists, so they are turned off if it does not
         if(!Utils.isPlayer)
@@ -123,12 +140,7 @@ public class MenuUI : MonoBehaviour
             CheatToggles.spamOpenAllDoors = false;
             CheatToggles.mushSpore = false;
 
-            CheatToggles.animShields = false;
-            CheatToggles.animAsteroids = false;
-            CheatToggles.animEmptyGarbage = false;
-            CheatToggles.animMedScan = false;
-            CheatToggles.animCamsInUse = false;
-            MalumCheats.StopAllAnimationsCheats();
+            MalumCheats.StopShipAnimCheats();
         }
 
         if(!Utils.isHost && !Utils.isFreePlay)
