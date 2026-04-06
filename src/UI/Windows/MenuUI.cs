@@ -29,6 +29,7 @@ public class MenuUI : MonoBehaviour
         _tabs.Add(new HostOnlyTab());
         _tabs.Add(new PassiveTab());
         _tabs.Add(new ModesTab());
+        _tabs.Add(new SettingsTab());
         _tabs.Add(new ConfigTab());
     }
 
