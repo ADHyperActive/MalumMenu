@@ -1,20 +1,10 @@
-# 📋 Features
-
-## 👱 Player
+## Movement ↔️
 
 | Cheat | Description | Type | Default|
 |------------|-------------|------|--------|
-| NoClip     | Allows you to walk through walls like a ghost | Toggle | Off
-| Boost Speed | Doubles your player's speed | Toggle | Off |
-
-#### Murder
-
-| Cheat | Description | Type | Default|
-|------------|-------------|------|--------|
-| Kill Player | Select a player to kill them immediatly | Menu |
-| Kill All Crewmates | Kill all crewmates immediatly | Button |
-| Kill All Impostors | Kill all impostors immediatly | Button |
-| Kill All | Kill all players immediatly | Button |
+| NoClip          | Allows you to walk through walls like a ghost | Toggle | Off |
+| Invert Controls | Inverts movement from WASD keys / controller. | Toggle | Off |
+| Speed           | Allows you to adjust player / ghost speed     | Slider |
 
 #### Teleport
 
@@ -23,17 +13,18 @@
 | to Cursor | Teleport by right-clicking with your cursor. Works best with the ZoomOut cheat | Toggle | Off |
 | to Player | Teleport to a player's position by selecting them | Menu |
 
-## 👁️ ESP
+## ESP 👁️
 
 MalumMenu's ESP cheats are completely client-side, and thus undetectable by anticheat
 
 | Cheat | Description | Type | Default|
 |------------|-------------|------|--------|
+| See Player Info | See level, platform, and host status for all players through their nametag | Toggle | Off |
 | See Roles | See every player's role through their nametag | Toggle | Off |
-| See Ghosts | Allows you to see ghosts, protections, and ghost chat even if you are alive | Toggle | Off
+| See Ghosts | Allows you to see ghosts, protections, and ghost chat even if you are alive | Toggle | Off |
 | No Shadows | Removes all shadows, allowing you to see during blackouts and even through walls<br>Also, lets you see through spore clouds in the Fungle Jungle | Toggle | Off |
 | Reveal Votes | Reveals votes as they are being cast rather than at the end of the meeting<br>Also, lets you see colored votes even if votes are set to anonymous | Toggle | Off |
-| Always Chat | Keeps the chat icon always enabled, allowing you to chat at any time (even while not in a meeting or the lobby) | Toggle | Off |
+| See Lobby Info | ? | Toggle | Off |
 
 #### Camera
     
@@ -52,6 +43,7 @@ MalumMenu's ESP cheats are completely client-side, and thus undetectable by anti
 | Ghosts | Shows tracer lines for ghosts (color: white) | Toggle | Off |
 | Dead Bodies | Shows tracer lines for dead bodies on the ground (color: yellow) | Toggle | Off |
 | Color-based | Changes the color of tracer lines to the color of their players| Toggle | Off |
+| Distance-based | Changes the color of tracer lines based on the distance of their players| Toggle | Off |
 
 #### Minimap
 
@@ -62,7 +54,7 @@ MalumMenu's ESP cheats are completely client-side, and thus undetectable by anti
 | Ghosts | Changes the map so that it shows the position of every ghost (color: white) | Toggle | Off |
 | Color-based | Changes the color of map icons to the color of their players | Toggle | Off |
 
-## 🎭 Roles
+## Roles 🎭
 
 | Cheat | Description | Type | Default |
 |------------|-------------|------|----|
@@ -72,15 +64,7 @@ MalumMenu's ESP cheats are completely client-side, and thus undetectable by anti
 
 | Cheat | Description | Type | Default |
 |------------|-------------|------|----|
-| Kill Anyone | Allows you to kill anyone, regardless if they are protected, impostors, crawling in a vent, or a ghost | Toggle | Off |
-| No Kill Cooldown | Removes the cooldown period after kills, allowing you to spam-kill as much as you please | Toggle | Off |
 | Kill Reach | Allows you to kill players regardless of how far they are on the map | Toggle | Off |
-
-#### Phantom
-
-| Cheat | Description | Type | Default |
-|------------|-------------|------|----|
-| Kill While Vanished | Allows you to kill while invisible | Toggle | Off |
 
 #### Shapeshifter
 
@@ -93,7 +77,7 @@ MalumMenu's ESP cheats are completely client-side, and thus undetectable by anti
 
 | Cheat | Description | Type | Default |
 |------------|-------------|------|----|
-| Complete My Tasks | Complete all of your crewmate tasks immediatly | Button |
+| Show Tasks Menu | Show menu to complete tasks and see other players' tasks | Menu |
 
 #### Tracker
 
@@ -102,6 +86,7 @@ MalumMenu's ESP cheats are completely client-side, and thus undetectable by anti
 | Endless Tracking | Allows you to track another player forever | Toggle | Off |
 | No Track Delay | Removes the short delay between the tracked player and their icon on your tracker map | Toggle | Off |
 | No Track Cooldown | Removes the cooldown period after tracking someone | Toggle | Off |
+| Track Reach | Allows you to track players regardless of how far they are on the map | Toggle | Off |
 
 #### Engineer
 
@@ -116,14 +101,23 @@ MalumMenu's ESP cheats are completely client-side, and thus undetectable by anti
 |------------|-------------|------|----|
 | Endless Battery | The battery on your vitals panel will never run out | Toggle | Off |
 | No Vitals Cooldown | Removes the cooldown period after closing vitals panel  | Toggle | Off |
+
+#### Detective
+
+| Cheat | Description | Type | Default|
+|------------|-------------|------|--------|
+| Interrogate Reach | Allows you to interrogate players regardless of how far they are on the map | Toggle | Off |
     
-## 🚀 Ship
+## Ship 🚀
 
 | Cheat | Description | Type | Default |
 |------------|-------------|------|----|
 | Unfixable Lights | Disables lights completely (they cannot be fixed manually by players)<br>You can enable them again by clicking the button | Toggle | Off |
+| Call Meeting | Call an emergency meeting | Button |
 | Report Body | Report any player as a dead body to start a meeting | Button |
 | Close Meeting | Forcefully closes the meeting window (only for you), allowing you to move and interact with the game during meetings | Button |
+| Auto open doors on use | Automatically open doors when clicked | Toggle | Off |
+| Kick offensive names | Automatically kick people with offensive names (and auser) | Toggle | Off |
 
 #### Sabotage
 
@@ -137,18 +131,87 @@ Moreover, different sabotages can be enabled at the same time, and they even wor
 | Oxygen | Allows you to enable/disable Oxygen sabotage | Toggle | Off |
 | Lights | Allows you to enable/disable Lights sabotage | Toggle | Off |
 | Comms | Allows you to enable/disable Communications sabotage | Toggle | Off |
-| Doors | Immediatly locks all doors on the ship | Button |
-| MushroomMixup | Induces Mushroom Mixup sabotage on Fungle map | Button |
+| Doors | Opens a menu which allows you to open/close doors individually | Button |
+| Mushroom Mixup | Induces Mushroom Mixup sabotage on Fungle map | Button |
+| Trigger Spores | Induces spores on Fungle map | Button |
+| Open Sabotage Map | Opens sabotage map as if you are the Impostor | Button |
 
 #### Vents
 
 | Cheat | Description | Type | Default|
 |------------|-------------|------|--------|
-| UseVents | Allows you to use vents even if you are not an impostor or an engineer | Toggle | Off
-| KickVents | Forcefully kicks all players from vents | Button |
-| WalkInVents | Allows you to move and interact with the game even though you are inside of a vent<br>This gives you a sort of invisibility until you disable the setting and leave the vent<br>(*Some activites such as killing will forcefully make you visible again*) | Toggle | Off
+| Unlock Vents | Allows you to use vents even if you are not an impostor or an engineer | Toggle | Off
+| Kick All from Vents | Forcefully kicks all players from vents | Button |
+| Walk in Vents | Allows you to move and interact with the game even though you are inside of a vent<br>This gives you a sort of invisibility until you disable the setting and leave the vent<br>(*Some activites such as killing will forcefully make you visible again*) | Toggle | Off
 
-## 💤 Passive
+## Chat 💬
+
+| Cheat | Description | Type | Default|
+|------------|-------------|------|--------|
+| Enable Chat | Allow chat at all times during the game (example: alive outside meeting) | Toggle | Off |
+| Bypass URL Block | Allow users to put URLs in the chat | Toggle | Off |
+| Lower rate limits | Lower the cooldown on chat messages | Toggle | Off |
+
+#### Textbox
+
+| Cheat | Description | Type | Default|
+|------------|-------------|------|--------|
+| Unlock Extra Characters | Allow typing symbols that the chat usually blocks | Toggle | Off |
+| Allow longer messages | Increase character limit in message from 100 to 120 | Toggle | Off |
+| Unlock Clipboard | Allow Copy & Paste in the chat | Toggle | Off |
+
+## Animations 📽️
+
+| Cheat | Description | Type | Default|
+|------------|-------------|------|--------|
+| Shields | Trigger shields animation | Button |
+| Asteroids | Toggle asteroids animation | Toggle | Off |
+| Empty Garbage | Trigger empty garbage animation | Button |
+| Medbay Scan | Toggle medbay animation | Toggle | Off |
+| Cams In Use | Toggle faking cameras in use | Toggle | Off |
+
+#### Client-Side
+
+| Cheat | Description | Type | Default|
+|------------|-------------|------|--------|
+| Moonwalk | Toggle client-sided moonwalk animation | Toggle | Off |
+
+## Host-Only 🔐
+
+| Cheat | Description | Type | Default|
+|------------|-------------|------|--------|
+| Kill while Vanished | Allows you to kill as phantom while vanished | Toggle | Off |
+| Kill Anyone | Allows you to kill anyone (even other impostors) | Toggle | Off |
+| No Kill Cooldown | Removes kill cooldown | Toggle | Off |
+| Show Protect Menu | Show a menu to protect other players | Button |
+
+
+#### Murder
+
+| Cheat | Description | Type | Default|
+|------------|-------------|------|--------|
+| Kill Player | Select a player to kill them immediatly | Menu |
+| Telekill Player | Select a player to teleport to them then kill them | Menu |
+| Kill All Crewmates | Kill all crewmates immediatly | Button |
+| Kill All Impostors | Kill all impostors immediatly | Button |
+| Kill Everyone | Kill all players immediatly | Button |
+
+#### Game State
+
+| Cheat | Description | Type | Default|
+|------------|-------------|------|--------|
+| Force Start Game | Force game to immediately start | Button |
+| No Game End | Prevent game from ending | Toggle | Off |
+
+#### Meetings
+
+| Cheat | Description | Type | Default|
+|------------|-------------|------|--------|
+| Skip Meeting | End meeting and eject no one due to tie | Button |
+| Vote Immune | Prevent yourself from being voted out | Toggle | Off |
+| Eject Player | Select a player to be ejected, this player will be voted out. | Menu |
+
+## Passive 💤
 
 These cheats are constantly running in the background and **cannot be disabled to avoid problems.**
 
@@ -157,8 +220,27 @@ These cheats are constantly running in the background and **cannot be disabled t
 | Free Cosmetics | Gives you access to all of the game's cosmetics for free, including:<br><br>- Hats<br>- Visors<br>- Skins<br>- Pets<br>- Nameplates<br>- Bundles<br>- Cosmicubes | Toggle | On |
 | Avoid Penalties | Removes the penalty you receive when disconnecting from games early | Toggle | On |
 | Unlock Extra Features | Unlocks many of the game's special features automatically, including:<br><br>- Freechat<br>- Friend list<br>- Custom name<br>- Online gameplay | Toggle | On |
+| Copy Lobby Code on Disconnect | Copies the lobby code to clipboard when you disconnect (including being kicked) | Toggle | Off |
+| Spoof Date to April 1st | Forces the april fools update | Toggle | Off |
 
-## 📃 Config
+## Modes 💿
+
+| Cheat | Description | Type | Default|
+|------------|-------------|------|--------|
+| RGB Mode | RGB GUI | Toggle | Off |
+| Stealth Mode | Minimize risk of being kicked by anticheat | Toggle | Off |
+| Panic Mode | Kill MalumMenu and restore normal Among Us GUI | Button |
+
+## Config 📃
+
+| Cheat | Description | Type | Default|
+|------------|-------------|------|--------|
+| Reload Config | Reload config file | Button |
+| Save to Profile | Save MalumMenu profile | Button |
+| Load from Profile | Load MalumMenu Profile | Button |
+
+
+## Config File
 
 You can change all of the following settings in `BepInEx/config/MalumMenu.cfg`
 
@@ -176,4 +258,3 @@ You can change all of the following settings in `BepInEx/config/MalumMenu.cfg`
 ## Other relevant features of MalumMenu:
 
 - MalumMenu has a simple **GUI** that is easy to navigate and can be toggled using the **DELETE** key on your keyboard
-- [**TEMPORARILY BROKEN**] MalumMenu comes with **custom announcements** that it will automatically fetch online at launch.
