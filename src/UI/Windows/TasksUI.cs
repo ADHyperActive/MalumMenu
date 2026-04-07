@@ -75,7 +75,7 @@ public class TasksUI : MonoBehaviour
                 foreach (var task in player.myTasks)
                 {
                     // Do some checks to not show texts: sabotage active, dead hint, impostor hint
-                    if (Utils.SabotageTaskTypes.Contains(task.TaskType)) continue;
+                    if (task.TaskType is TaskTypes.ResetReactor or TaskTypes.RestoreOxy or TaskTypes.FixLights or TaskTypes.FixComms or TaskTypes.ResetSeismic or TaskTypes.StopCharles or TaskTypes.MushroomMixupSabotage) continue;
 
                     _tasksString.Clear();
                     task.AppendTaskText(_tasksString);
