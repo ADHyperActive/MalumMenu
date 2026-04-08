@@ -408,6 +408,8 @@ public static class EndGameManager_Start
     // Postfix patch of EndGameManager.Start to randomize cosmetics, name, and color when the game ends
     public static void Postfix()
     {
+        if (!CheatToggles.randomizeCosmeticsOnGameEnd) return;
+
         MalumCheats.RandomizeCosmeticsCheat();
     }
 }

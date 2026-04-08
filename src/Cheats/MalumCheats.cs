@@ -445,7 +445,9 @@ public static class MalumCheats
         DataManager.Player.Customization.Name = DestroyableSingleton<AccountManager>.Instance.GetRandomName();
 
         // Randomize player color
-        DataManager.Player.Customization.Color = UnityEngine.Random.Range(0, Palette.PlayerColors.Length);
+        var playerColors = Palette.PlayerColors;
+        if (playerColors != null && playerColors.Length > 0)
+            DataManager.Player.Customization.Color = UnityEngine.Random.Range(0, playerColors.Length);
 
         // Randomize hat
         var allHats = DestroyableSingleton<HatManager>.Instance.allHats;
