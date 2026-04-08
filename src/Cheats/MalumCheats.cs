@@ -437,6 +437,39 @@ public static class MalumCheats
         }
     }
 
+    public static void RandomizeCosmeticsCheat()
+    {
+        if (!CheatToggles.randomizeCosmeticsOnGameEnd) return;
+
+        // Randomize player name
+        DataManager.Player.Customization.Name = DestroyableSingleton<AccountManager>.Instance.GetRandomName();
+
+        // Randomize player color
+        DataManager.Player.Customization.Color = UnityEngine.Random.Range(0, Palette.PlayerColors.Length);
+
+        // Randomize hat
+        var allHats = DestroyableSingleton<HatManager>.Instance.allHats;
+        if (allHats != null && allHats.Count > 0)
+            DataManager.Player.Customization.Hat = allHats[UnityEngine.Random.Range(0, allHats.Count)].ProdId;
+
+        // Randomize skin
+        var allSkins = DestroyableSingleton<HatManager>.Instance.allSkins;
+        if (allSkins != null && allSkins.Count > 0)
+            DataManager.Player.Customization.Skin = allSkins[UnityEngine.Random.Range(0, allSkins.Count)].ProdId;
+
+        // Randomize pet
+        var allPets = DestroyableSingleton<HatManager>.Instance.allPets;
+        if (allPets != null && allPets.Count > 0)
+            DataManager.Player.Customization.Pet = allPets[UnityEngine.Random.Range(0, allPets.Count)].ProdId;
+
+        // Randomize visor
+        var allVisors = DestroyableSingleton<HatManager>.Instance.allVisors;
+        if (allVisors != null && allVisors.Count > 0)
+            DataManager.Player.Customization.Visor = allVisors[UnityEngine.Random.Range(0, allVisors.Count)].ProdId;
+
+        DataManager.Player.Save();
+    }
+
     public static void StopShipAnimCheats()
     {
         CheatToggles.animShields = false;

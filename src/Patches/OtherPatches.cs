@@ -401,3 +401,13 @@ public static class PlayerPurchasesData_GetPurchase
         __result = true;
     }
 }
+
+[HarmonyPatch(typeof(EndGameManager), nameof(EndGameManager.Start))]
+public static class EndGameManager_Start
+{
+    // Postfix patch of EndGameManager.Start to randomize cosmetics, name, and color when the game ends
+    public static void Postfix()
+    {
+        MalumCheats.RandomizeCosmeticsCheat();
+    }
+}
