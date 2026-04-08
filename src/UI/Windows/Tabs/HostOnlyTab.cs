@@ -35,10 +35,6 @@ public class HostOnlyTab : ITab
 
     private void DrawGeneral()
     {
-        CheatToggles.bypassHostOnly = GUILayout.Toggle(CheatToggles.bypassHostOnly, " Bypass Host Only");
-
-        GUILayout.Space(5);
-
         CheatToggles.killVanished = GUILayout.Toggle(CheatToggles.killVanished, " Kill While Vanished");
 
         CheatToggles.killAnyone = GUILayout.Toggle(CheatToggles.killAnyone, " Kill Anyone");
