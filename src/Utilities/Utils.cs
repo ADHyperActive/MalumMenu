@@ -603,27 +603,35 @@ public static class Utils
     public static void OpenConfigFile()
     {
         var configFilePath = MalumMenu.Plugin.Config.ConfigFilePath;
+        var configEditor = MalumMenu.configEditor.Value;
 
-        if (File.Exists(configFilePath))
+        if (!string.IsNullOrWhiteSpace(configEditor))
         {
-            try
+            if (File.Exists(configFilePath))
             {
-                System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo
+                try
                 {
-                    FileName = MalumMenu.configEditor.Value,
-                    Arguments = configFilePath,
-                    UseShellExecute = true
-                    //Verb = "edit"
-                });
+                    System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo
+                    {
+                        FileName = configEditor,
+                        Arguments = configFilePath,
+                        UseShellExecute = true
+                        //Verb = "edit"
+                    });
+                }
+                catch (Exception ex)
+                {
+                    MalumMenu.Log.LogError(ex.Message);
+                }
             }
-            catch (Exception ex)
+            else
             {
-                MalumMenu.Log.LogError(ex.Message);
+                MalumMenu.Log.LogError("Configuration file does not exist");
             }
         }
         else
         {
-            MalumMenu.Log.LogError("Configuration file does not exist");
+            MalumMenu.Log.LogError("Configuration editor not specified");
         }
     }
 
