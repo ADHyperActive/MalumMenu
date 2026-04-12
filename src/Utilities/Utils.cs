@@ -606,13 +606,20 @@ public static class Utils
 
         if (File.Exists(configFilePath))
         {
-            System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo
+            try
             {
-                FileName = MalumMenu.configEditor.Value,
-                Arguments = configFilePath,
-                UseShellExecute = true
-                //Verb = "edit"
-            });
+                System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo
+                {
+                    FileName = MalumMenu.configEditor.Value,
+                    Arguments = configFilePath,
+                    UseShellExecute = true
+                    //Verb = "edit"
+                });
+            }
+            catch (Exception ex)
+            {
+                MalumMenu.Log.LogError(ex.Message);
+            }
         }
         else
         {
