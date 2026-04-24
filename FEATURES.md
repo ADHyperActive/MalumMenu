@@ -24,7 +24,7 @@ MalumMenu's ESP cheats are completely client-side, and thus undetectable by anti
 | See Ghosts | Allows you to see ghosts, protections, and ghost chat even if you are alive | Toggle | Off |
 | No Shadows | Removes all shadows, allowing you to see during blackouts and even through walls<br>Also, lets you see through spore clouds in the Fungle Jungle | Toggle | Off |
 | Reveal Votes | Reveals votes as they are being cast rather than at the end of the meeting<br>Also, lets you see colored votes even if votes are set to anonymous | Toggle | Off |
-| See Lobby Info | ? | Toggle | Off |
+| See Lobby Info | Show more details about lobbies in lobby selection menu | Toggle | Off |
 
 #### Camera
     
@@ -258,3 +258,4 @@ You can change all of the following settings in `BepInEx/config/MalumMenu.cfg`
 ## Other relevant features of MalumMenu:
 
 - MalumMenu has a simple **GUI** that is easy to navigate and can be toggled using the **DELETE** key on your keyboard
+- [**TEMPORARILY BROKEN**] MalumMenu comes with **custom announcements** that it will automatically fetch online at launch.
