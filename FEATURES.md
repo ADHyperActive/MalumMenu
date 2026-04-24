@@ -108,7 +108,7 @@ MalumMenu's ESP cheats are completely client-side, and thus undetectable by anti
 |------------|-------------|------|--------|
 | Interrogate Reach | Allows you to interrogate players regardless of how far they are on the map | Toggle | Off |
     
-## Ship 🚀
+## 🚀 Ship 
 
 | Cheat | Description | Type | Default |
 |------------|-------------|------|----|
