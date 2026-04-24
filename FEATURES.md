@@ -13,7 +13,7 @@
 | to Cursor | Teleport by right-clicking with your cursor. Works best with the ZoomOut cheat | Toggle | Off |
 | to Player | Teleport to a player's position by selecting them | Menu |
 
-## ESP 👁️
+## 👁️ ESP
 
 MalumMenu's ESP cheats are completely client-side, and thus undetectable by anticheat
 
@@ -54,7 +54,7 @@ MalumMenu's ESP cheats are completely client-side, and thus undetectable by anti
 | Ghosts | Changes the map so that it shows the position of every ghost (color: white) | Toggle | Off |
 | Color-based | Changes the color of map icons to the color of their players | Toggle | Off |
 
-## Roles 🎭
+## 🎭 Roles
 
 | Cheat | Description | Type | Default |
 |------------|-------------|------|----|
@@ -144,7 +144,7 @@ Moreover, different sabotages can be enabled at the same time, and they even wor
 | Kick All from Vents | Forcefully kicks all players from vents | Button |
 | Walk in Vents | Allows you to move and interact with the game even though you are inside of a vent<br>This gives you a sort of invisibility until you disable the setting and leave the vent<br>(*Some activites such as killing will forcefully make you visible again*) | Toggle | Off
 
-## Chat 💬
+## 💬 Chat 
 
 | Cheat | Description | Type | Default|
 |------------|-------------|------|--------|
@@ -160,7 +160,7 @@ Moreover, different sabotages can be enabled at the same time, and they even wor
 | Allow longer messages | Increase character limit in message from 100 to 120 | Toggle | Off |
 | Unlock Clipboard | Allow Copy & Paste in the chat | Toggle | Off |
 
-## Animations 📽️
+## 📽️ Animations 
 
 | Cheat | Description | Type | Default|
 |------------|-------------|------|--------|
@@ -176,7 +176,7 @@ Moreover, different sabotages can be enabled at the same time, and they even wor
 |------------|-------------|------|--------|
 | Moonwalk | Toggle client-sided moonwalk animation | Toggle | Off |
 
-## Host-Only 🔐
+## 🔐 Host-Only 
 
 | Cheat | Description | Type | Default|
 |------------|-------------|------|--------|
@@ -211,7 +211,7 @@ Moreover, different sabotages can be enabled at the same time, and they even wor
 | Vote Immune | Prevent yourself from being voted out | Toggle | Off |
 | Eject Player | Select a player to be ejected, this player will be voted out. | Menu |
 
-## Passive 💤
+## 💤 Passive
 
 These cheats are constantly running in the background and **cannot be disabled to avoid problems.**
 
@@ -223,7 +223,7 @@ These cheats are constantly running in the background and **cannot be disabled t
 | Copy Lobby Code on Disconnect | Copies the lobby code to clipboard when you disconnect (including being kicked) | Toggle | Off |
 | Spoof Date to April 1st | Forces the april fools update | Toggle | Off |
 
-## Modes 💿
+## 💿 Modes 
 
 | Cheat | Description | Type | Default|
 |------------|-------------|------|--------|
@@ -231,7 +231,7 @@ These cheats are constantly running in the background and **cannot be disabled t
 | Stealth Mode | Minimize risk of being kicked by anticheat | Toggle | Off |
 | Panic Mode | Kill MalumMenu and restore normal Among Us GUI | Button |
 
-## Config 📃
+## 📃 Config 
 
 | Cheat | Description | Type | Default|
 |------------|-------------|------|--------|
